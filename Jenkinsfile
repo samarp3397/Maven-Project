@@ -16,6 +16,11 @@ pipeline {
                 bat "mvn test"
             }
         }
+        stage('--build--') {
+            steps {
+                bat "mvn build"
+            }
+        }
        
     }
 }
