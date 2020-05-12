@@ -16,9 +16,9 @@ pipeline {
                 bat "mvn test"
             }
         }
-        stage('--clean--') {
+        stage('--package--') {
             steps {
-                bat "mvn clean compile"
+                bat "mvn package"
             }
         }
        
